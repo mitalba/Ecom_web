@@ -1,0 +1,8 @@
+{% autoescape off %}
+
+Hello {{user.username}}
+Please Click This Link below to vefify your account
+
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
